@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <name>Pipeline Code</name>
     <groupId>danielgallo.teamcity</groupId>
-    <artifactId>PipelineCode</artifactId>
+    <artifactId>pipelinecode</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
