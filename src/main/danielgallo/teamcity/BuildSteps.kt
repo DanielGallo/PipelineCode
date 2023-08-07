@@ -17,5 +17,7 @@ class AndroidBuildStepConfig {
 
 fun BuildSteps.android(configure: AndroidBuildStepConfig.() -> Unit) : AndroidBuildStep {
     val config = AndroidBuildStepConfig().apply(configure)
-    return AndroidBuildStep(config.androidSdkPath, config.apkName)
+    val result = AndroidBuildStep(config.androidSdkPath, config.apkName)
+    step(result)
+    return result
 }
