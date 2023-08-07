@@ -5,7 +5,6 @@ class AndroidBuildStep(
     private val androidSdkPath: String,
     private val apkName: String
 ) : ScriptBuildStep ({
-    type = "android"
     scriptContent = """
         echo "Building $apkName"
     """.trimIndent()
